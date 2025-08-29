@@ -458,7 +458,7 @@ export default function HandleEditData() {
                                     value={isNaN(CGPA) ? "" :parseFloat(CGPA)}
                                     placeholder="9.00"
                                     onChange={(e) => {
-                                        e.target.value != Nan  ? setCGPA(e.target.value) : "";
+                                        e.target.value != NaN  ? setCGPA(e.target.value) : "";
                                     }}
                                     className={
                                         "block text-lg w-full rounded-md py-2 px-2 text-black  ring-1 ring-inset ring-bGray placeholder:text-gray-400 sm:text-md sm:leading-6 outline-none! normal-nums" +
